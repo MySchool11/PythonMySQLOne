@@ -32,10 +32,13 @@ try:
 except mysql.connector.Error as err:
     if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
         print("Something is wrong with your user name or password")
+        exit(1)
     elif err.errno == errorcode.ER_BAD_DB_ERROR:
         print("The named database does not exist")
+        exit(1)
     else:
         print(err)
+        exit(1)
 else:
     print("We connected to the database. Connection is now closing.")
     conn.close()
