@@ -41,5 +41,4 @@ else:
     conn.close()
 
 # The biggest problem here, as you may have figured out, is the details are hard-coded so readable by anyone with enough
-# savvy to open the .py file in a text editor. Move on to lesson two to discover how to prevent this issue.
-    
+# savvy to open the .py file in a text editor. Move on to lesson two to discover how to prevent this issue
